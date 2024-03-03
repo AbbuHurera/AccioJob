@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #f5f3f3;
+}
+/* ! Design for Header*/
+header{
+    border:none;
+    box-shadow: 0px 7px 5px rgb(213, 213, 255);
+    background-color: #f5f3f3;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav{
+    border: none;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo{
+    border: none;
+    width: 35%;
+    height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav .logo img{
+    border:none;
+    margin-left: 100px;
+}
+
+nav .links{
+    border: none;
+    width: 65%;
+    height: 75px;
+}
+.links ul{
+    list-style-type: none;
+    border: none;
+    width: 100%;
+    height: 75px;
+}
+.links ul > li{
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+
+.links li > a{
+    border: none; 
+    width: 78%;
+    height: 70%;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+.links li > a:hover{
+    color: rgb(77, 77, 232);
+    font-weight: bold;
+}
+.links li a > img{
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+.links ul > button{
+    border: 1px solid white;
+    color: rgb(238, 232, 232);
+    font-size: 15px;
+    border-radius: 12px;
+    background: rgb(77, 77, 232);
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+.links ul > button:hover{
+    border: 2px solid rgb(77, 77, 232);
+    font-weight: bold;
+    color: rgb(77, 77, 232);
+    background: white;
+    transform: scale(1.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+header .add{
+    background-color: rgb(77, 77, 232);
+    width: 100%;
+    height: 25px;
+}
+.add p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* ! Design for Hero Section */
+.hero{
+    border: none;
+    width: 100%;
+    height: 625px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .social{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+}
+
+.hero .heroText, .hero .heroForm{
+    border: none;
+    width: 60%;
+    height: 600px;
+}
+
+/* ? Design for text side */
+.hero .heroText{
+    position: relative;
+}
+.heroText #arrow-line{
+    position: absolute;
+    right: -40px;
+    bottom: 275px;
+}
+.hero .heroText .heading{
+    border: none;
+    width: 75%;
+    height: 100px;
+    margin: 130px auto 10px;
+}
+.heading span, .heroForm h2 span{
+    font-style: oblique;
+    color: rgb(77, 77, 232);
+}
+
+.heroText .text{
+    border: none;
+    width: 75%;
+    height: 70px;
+    margin: auto;
+    justify-content: left;
+}
+.heroText .text p{
+    width: 70%;
+    font-family: cursive;
+    color: grey;
+}
+.heroText .container{
+    border: 1px solid lightgrey;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 90%;
+    height: 65px;
+    margin:15px auto 0px;
+}
+.container .box{
+    border: none;
+    width: 24%;
+    height: 55px;
+    justify-content: space-between;
+}
+.box p{
+    border: none;
+    width: 85%;
+    height: 40px;
+    margin-left: 5px;
+}
+.box p span{
+    font-style: italic;
+    font-family: cursive;
+    font-size: large;
+}
+.box img{
+    width: 30px;
+}
+
+.heroText .btn{
+    border: none;
+    justify-content: space-between;
+    width: 75%;
+    margin: 20px auto;
+}
+.heroText .btn button{
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(26, 26, 196);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 5px 10px 10px 0px;
+}
+#btn2{
+    background-color: white;
+    color: rgb(26, 26, 196);
+}
+/* ? Design for form side */
+.hero .heroForm{
+    width: 40%;
+}
+.heroForm form{
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: -5px 5px 10px rgb(213, 213, 255);
+    width: 75%;
+    height: 500px;
+}
+.form-head h2{
+    width: 80%;
+    margin: 20px auto;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.form-head p,form p{
+    width: 80%;
+    margin: 20px auto;
+    font-family: cursive;
+    color: rgb(183, 175, 175);
+    text-align: center;
+}
+form a{
+    font-family: cursive;
+    color: rgb(77, 77, 232);
+    text-decoration: none;
+}
+.username{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: auto;
+}
+.username label{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: rgb(77, 73, 73);
+}
+form input[type="text"]{
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(244, 244, 244);
+    display: block;
+    margin: 25px auto;
+    width: 90%;
+    height: 45px;
+    text-indent: 35px;
+}
+form input[type="text"]::placeholder{
+    text-indent: 55px;
+    color: lightgray;
+}
+form input[type="text"]:focus{
+    outline: none;
+}
+
+form .apply{
+    border: none;
+    border-radius: 12px;
+    padding: 15px 120px;
+    display: block;
+    margin: 50px auto 0px;
+    background-image: radial-gradient(rgb(113, 113, 243), rgb(26, 26, 196));
+    color: white;
+}
+
+/* !Design for courses offered section */
+.courses-offered{
+    border: none;
+    width: 100%;
+    height: 95vh;
+    background-color: rgb(213, 213, 255);
+}
+.courses-offered h2{
+    border: none;
+    margin: 30px auto 10px;
+    text-align: center;
+    color: rgb(142, 142, 240);
+    font-size: medium;
+    font-style: oblique;
+}
+.courses-offered h3{
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(77, 77, 232);
+}
+section.articles{
+    border: none;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+article.beginner,article.intermediate{
+    border: none;
+    width: 30%;
+    height: 75vh;
+}
+article form{
+    width: 90%;
+    height: 70vh;
+}
+article fieldset:hover{
+    border: 2px solid rgb(77, 77, 232);
+    box-shadow: -5px 5px 7px rgb(77, 77, 232);
+}
+article fieldset{
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    height: 70vh;
+    background-color: #f5f3f3;
+}
+fieldset legend{
+    text-align: center;
+    background-color: rgb(77, 77, 232);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 10px;
+}
+article form h4{
+    border: none;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-style: oblique;
+}
+form .perks{
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+.perks a{
+    display: block;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: rgb(213, 213, 255);
+    text-align: center;
+    font-size: small;
+    padding: 2px 10px;
+    margin: 5px;
+}
+article form p{
+    font-size: small;
+    margin: 10px auto;
+}
+
+form .form-container{
+    border: none;
+    width: 95%;
+    height: 250px;
+    margin: auto;
+}
+.form-container .row{
+    border: none;
+    width: 98%;
+    height: 44px;
+    margin: 5px auto;
+    justify-content: space-evenly;
+}
+.form-container .boxes{
+    border: none;
+    width: 48%;
+    height: 40px;
+    color: black;
+}
+.form-container .boxedText{
+    border: none;
+    width: 48%;
+    height: 40px;
+}
+form .downloads{
+    border: none;
+    width: 95%;
+    margin: 25px auto 10px;
+    height: 40px;
+}
+.downloads button{
+    border: 1px solid rgb(77, 77, 232);
+    border-radius: 12px;
+    width: 30%;
+    height: 35px;
+    margin: 10px;
+    color: white;
+}
+.downloads .learn{
+    background-color: rgb(77, 77, 232);
+}
+.downloads button p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(77, 77, 232);
+    margin: -12px;
+}
+
+/* !Design for hiring partners and mentors */
+.hiring{
+    border: none;
+    width: 100%;
+    height: 95vh;
+}
+.paras{
+    border: none;
+    width: 100%;
+    height: 25vh;
+}
+.paras h2{
+    margin: 25px auto 15px;
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    color: rgb(147, 147, 237);
+}
+.paras p{
+    border: none;
+    width: 35%;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+}
+.paras .one{
+    display: block;
+    margin: 5px auto 0px;
+    font-family: cursive;
+    color: rgb(77, 77, 232);
+    font-size: 33px;
+}
+.paras .two{
+    display: block;
+    margin: 7px auto;
+    font-size: small;
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(164, 155, 155);
+}
+.hiring .companies{
+    border: none;
+    width: 90%;
+    height: 53vh;
+    margin: auto;
+}
+.companies .company-row{
+    border: none;
+    width: 100;
+    height: 13vh;
+    margin: 25px auto;
+    justify-content: space-evenly;
+}
+.company-row .company{
+    border: none;
+    width: 10%;
+    height: 12vh;
+}
+.company img{
+    width: 100%;
+    height: 8vh;
+}
+
+.hiring button{
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(77, 77, 232);
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 5px auto 0px;
+    padding: 10px 5%;
+    cursor: pointer;
+}
+
+.alumini{
+    border: none;
+    width: 100%;
+    height: 107vh;
+    background-color: rgb(213, 213, 255);;
+}
+.alumini .head{
+    margin-top: 27px;
+}
+
+.alumini .head p{
+   text-align: center;
+   font-size: xx-large;
+   font-style: italic;
+   margin: 5px auto;
+}
+.alumini #second{
+    font-size:medium;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(164, 155, 155);
+}
+.alumini-container{
+    border: none;
+    margin: 25px auto;
+    width: 80%;
+    height: 90vh;
+}
+.aluminion1{
+    border:none;
+    width: 98%;
+    height: 39vh;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.aluminion1 .alumini-box{
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: -5px 5px 8px lightgrey;
+    width: 30%;
+}
+
+.dabba .dabba-head{
+    margin: 15px 0px;
+    border: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.image .onee{
+    border: none;
+    width: 55px;
+}
+.dabba-head .dabbatext{
+    border: none;
+    width: 50%;
+}
+.dabba-head .logo{
+    border:none;
+    width: 15%;
+}
+.logo img{
+    margin-left: 8px;
+}
+.image .onee{
+    width: 55px;
+}
+.dabbatext p{
+    font-family: cursive;
+    font-style: italic;
+    color: gray;
+    font-size: small;
+}
+
+.dabbabody{
+    width: 90%;
+    border: none;
+    margin: 15px auto;
+}
+.dabbabody p{
+    margin: 10px 10px;
+    color: grey;
+}
+@media screen and (max-width:850px){
+    header{
+        height: 175px;
+    }
+
+    nav{
+        display: block;
+        height: 150px;
+    }
+    nav .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+    }
+    nav .links{
+        border: none;
+        display: block;
+        width: 100%;
+    }
+
+    /* ! Media Quiey for hero section */
+    .hero{
+        height: auto;
+        margin-top: 100px;
+        display: block;
+    }
+
+    .hero .heroText, .hero .heroForm{
+        width: 90%;
+        height: 600px;
+        margin: auto;
+    }
+
+    .hero .heroText{
+        height: auto;
+    }
+
+    .hero .heroText .heading{
+        margin-top: 20px;
+    }
+    .hero .container{
+        height: 120px;
+    }
+    .hero .container .box{
+        margin-top: -40px;
+    }
+
+    .heroText #arrow-line{
+        display: none;
+    }
+
+    /* !Media quries for courses section */
+    .courses-offered{
+        height: auto;
+    }
+
+    section.articles{
+        display: block;
+        height: auto;
+    }
+
+    article.beginner,article.intermediate{
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    /* ? media quries for hiring */
+    .hiring{
+        height: auto;
+    }
+    .paras p{
+        width: 70%;
+        height: auto;
+    }    
+
+
+    /* ? design for alumini */
+    .alumini-container{
+    border: none;
+    width: 100%;
+    height: auto;
+   }
+
+   .alumini-container{
+    width: 90%;
+    height: auto;
+   }
+   .aluminion1{
+    display: block;
+    border: none;
+    height: auto;
+    margin: auto ;
+   }
+   .alumini{
+    height: 175vh;
+   }
+   .alumini .alumini-box{
+    border: none;
+    width: 95%;
+    margin: 15px auto;
+    height: auto;
+   }
+   .dabba{
+    border: none;
+    width:100%;
+   }
+}
